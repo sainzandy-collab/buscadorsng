@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Senigalia">
+<meta name="theme-color" content="#c9a94e">
+<title>Senigalia — Matching Olfativo</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="gold-line"></div>
+<div class="topbar">
+  <div class="logo">S</div>
+  <div class="topbar-title">MATCHING OLFATIVO</div>
+  <div class="topbar-gear" id="gearBtn">⚙️</div>
+</div>
+<div class="topbar-border"></div>
+<header>
+  <div class="hero-title">Descubrí tu universo<br><span>olfativo</span></div>
+  <div class="hero-text">Escribí un perfume, una marca o una nota<br>y encontrá tu <em>interpretación Senigalia</em></div>
+</header>
+<div class="stats" id="stats"></div>
+<div class="search-section">
+  <div class="search-box">
+    <span class="search-icon">✨</span>
+    <input type="text" id="q" placeholder="Ej: Donna X115, One Million, vainilla..." autocomplete="off">
+    <button class="search-clear" id="cx">✕</button>
+  </div>
+  <div class="suggestions" id="sugs"></div>
+</div>
+<div class="cat-desc" id="catDesc"></div>
+<div class="profile" id="profile"></div>
+<div class="tabs">
+  <div class="tab on" id="tabMatch" data-tab="match">✨ Matching</div>
+  <div class="tab" id="tabBrowse" data-tab="browse">📋 Catálogo</div>
+  <div class="tab" id="tabAdmin" data-tab="admin">⚙️</div>
+</div>
+<div id="matchView"><div class="results" id="results"></div></div>
+<div id="browseView" style="display:none">
+  <div class="browse">
+    <div class="browse-filters" id="bfilters"></div>
+    <div class="browse-head"><div class="browse-title">Catálogo</div><div class="browse-count" id="bcount"></div></div>
+    <div class="bgrid" id="bgrid"></div>
+  </div>
+</div>
+<div id="adminView" style="display:none"><div class="admin" id="adminPanel"></div></div>
+<div class="ov" id="ov"><div class="mdl" id="mdl"></div></div>
+<div class="ov" id="printOv"><div class="print-view" id="printView"></div></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
